@@ -129,7 +129,7 @@ const Menu = () => {
     <ContainerMenu id='PaginaInicial'>
             
             <Logo>
-                <img className='logo_img' src="Imagens/logo.png" alt="Logo ThMotosCar" />
+                <img className='logo_img' src="../imagens/logo.png" alt="Logo ThMotosCar" />
             </Logo>
             
             <NavMenu>

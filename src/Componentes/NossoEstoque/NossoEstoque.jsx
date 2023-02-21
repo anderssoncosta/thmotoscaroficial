@@ -314,19 +314,19 @@ const NossoEstoque = () => {
             <ImagensLoja>
                 <StyleBanner class="items">
                     <div class="item active">
-                        <img src="../Imagens/estoque1.jpeg" alt='Imagem Nosso Estoque'/>
+                        <img src="/imagens/estoque1.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class=" item next">
-                        <img src="../Imagens/estoque2.jpeg" alt='Imagem Nosso Estoque'/>
+                        <img src="../imagens/estoque2.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="item">
-                        <img src="../Imagens/estoque3.jpeg" alt='Imagem Nosso Estoque'/>
+                        <img src="../imagens/estoque3.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="item">
-                        <img src="../Imagens/estoque4.jpeg" alt='Imagem Nosso Estoque'/>
+                        <img src="../imagens/estoque4.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="item prev">
-                        <img src="../Imagens/estoque5.jpg" alt='Imagem Nosso Estoque'/>
+                        <img src="../imagens/estoque5.jpg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="button-container">
                         <div class="button"><i class="fas fa-angle-left"></i></div>
