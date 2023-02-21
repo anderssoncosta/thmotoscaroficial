@@ -11,7 +11,7 @@ const ContainerNossaLoja = styled.div`
     gap: 10%;
 
     position: relative;
-    background-image: url(/Imagens/fundonossoestoque.png);
+    background-image: url(/imagens/fundonossoestoque.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
