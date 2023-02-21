@@ -16,6 +16,10 @@ const ContainerNossaLoja = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media screen and (max-width: 425px){
+        height: 600px;
+    }
+
 
 `
 
@@ -41,6 +45,28 @@ const Titulo = styled.div`
         font-weight: 900;
         text-shadow: 0px 0px 55px #ffd300;  
     }
+
+    @media screen and (max-width: 640px){
+        .primeiro{
+            font-size: 3rem;
+
+        }
+        .segundo{
+            font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 428px){
+        top: 15%;
+
+        .primeiro{
+            font-size: 2.3rem;
+
+        }
+        .segundo{
+            font-size: 2.3rem;
+        }
+    }
 `
 
 const StyleBanner = styled.div`
@@ -61,7 +87,7 @@ const StyleBanner = styled.div`
         height: 350px;
         border-radius: 50%;
         overflow: hidden;
-        transition: all 600ms ease-in-out;
+        transition: all 300ms ease-in-out;
         z-index: -1;
         opacity: 0;
     }
@@ -140,6 +166,38 @@ const StyleBanner = styled.div`
         float: right;
     }
 
+    @media screen and (max-width: 1440px){
+        .prev {
+        transform: translate(-120%, -50%);
+        }
+
+        .next {
+
+        transform: translate(20%, -50%);
+        }
+
+        .button-container{
+            width: 450px;
+
+        }
+    }
+
+    @media screen and (max-width: 1240px){
+        .prev {
+        transform: translate(-120%, -50%);
+        }
+
+        .next {
+
+        transform: translate(20%, -50%);
+        }
+
+        .button-container{
+            width: 450px;
+
+        }
+    }
+
     @media screen and (max-width: 1024px){
         .prev {
         transform: translate(-120%, -50%);
@@ -156,6 +214,17 @@ const StyleBanner = styled.div`
         }
     }
 
+    @media screen and (max-width: 990px){
+        .prev {
+            display: none;
+        }
+
+        .next {
+            display: none;
+        }
+
+    }
+
     @media screen and (max-width: 768px){
         .prev {
             display: none;
@@ -165,6 +234,19 @@ const StyleBanner = styled.div`
             display: none;
         }
 
+    }
+
+    @media screen and (max-width: 428px){
+        .active {
+            padding: 15px;
+        }
+        .item {
+            width: 280px;
+            height: 280px;
+        }
+        .button-container{
+            width: 380px;
+        }
     }
 
 `;
@@ -232,19 +314,19 @@ const NossoEstoque = () => {
             <ImagensLoja>
                 <StyleBanner class="items">
                     <div class="item active">
-                        <img src="/Imagens/estoque1.jpeg" alt='...'/>
+                        <img src="../Imagens/estoque1.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class=" item next">
-                        <img src="/Imagens/estoque2.jpeg" alt='...'/>
+                        <img src="../Imagens/estoque2.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="item">
-                        <img src="/Imagens/estoque3.jpeg" alt='...'/>
+                        <img src="../Imagens/estoque3.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="item">
-                        <img src="/Imagens/estoque4.jpeg" alt='...'/>
+                        <img src="../Imagens/estoque4.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="item prev">
-                        <img src="/Imagens/estoque5.jpg" alt='...'/>
+                        <img src="../Imagens/estoque5.jpg" alt='Imagem Nosso Estoque'/>
                     </div>
                     <div class="button-container">
                         <div class="button"><i class="fas fa-angle-left"></i></div>

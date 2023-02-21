@@ -12,9 +12,19 @@ const ContainerMenu = styled.div`
         height: 90px;
         
     }
+    
     @media screen and (max-width: 768px){
-        height: 120px;
+        height: 130px;
         
+    }
+
+    @media screen and (max-width: 640px){
+        height: 180px;
+
+    }
+    @media screen and (max-width: 428px){
+        height: 140px;
+
     }
 
 `
@@ -26,9 +36,6 @@ const Logo = styled.div`
 
 
     .logo_img{
-        /* position: relative;
-        left: 10%;
-        width: 25%; */
         width: 20%;
         transform: translate(120%, -5%);
 
@@ -44,11 +51,31 @@ const Logo = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        width: 60%;
-
+        width: 50%;
+        align-items: center;
+        
         .logo_img{
-            width: 25%;
+            width: 40%;
+            transform: none;
         }
+    }
+
+    @media screen and (max-width: 640px){
+        width: 60%;
+        align-items: center;
+        
+        .logo_img{
+            width: 40%;
+            transform: none;
+        }
+    }
+
+    @media screen and (max-width: 428px){
+        .logo_img{
+            width: 50%;
+            transform: none;
+        }
+
     }
 
 `
@@ -84,6 +111,13 @@ const NavMenu = styled.div`
         }
 
     }
+    @media screen and (max-width: 940px){
+        width: 70%;
+        a{
+            font-size: 1rem;
+        }
+
+    }
     @media screen and (max-width: 768px){
         display: none;
     }
@@ -100,8 +134,6 @@ const Menu = () => {
             
             <NavMenu>
 
-            
-                
                 <a className='link_nav btn' href="#PaginaInicial">Página Inicial</a>
                 <a className='link_nav btn' href="#SobreNos">Sobre Nós</a>
                 <a className='link_nav btn' href="#NossaLoja">Nossa Loja</a>

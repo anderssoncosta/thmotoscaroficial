@@ -9,6 +9,7 @@ const Container = styled.div`
         width: 100%;
         background-size:cover    
     }
+
 `
 
 const Banner = () => {

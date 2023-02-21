@@ -72,6 +72,28 @@ const ContatoForm = styled.form`
             
         }
     }
+
+    @media screen and (max-width: 640px){
+        .first{
+            font-size: 3rem;
+        }
+        .second{
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 425px){
+        .first{
+            font-size: 2.5rem;
+        }
+        .second{
+            font-size: 2.5rem;
+        }
+    }
 `
 
 const RedesSociais = styled.div`
@@ -95,6 +117,13 @@ const RedesSociais = styled.div`
         align-items: center;
         justify-content: center;
     }
+
+    @media screen and (max-width: 425px){
+        a{
+            width: 40px;
+            height: 40px;
+        }
+    }
 `
 
 const Mapa = styled.div`
@@ -113,6 +142,11 @@ const Mapa = styled.div`
     @media screen and (max-width: 1024px){
         width: 70%;
     }
+    @media screen and (max-width: 428px){
+        iframe{
+            height: 300px;
+        }
+    }
 `
 
 const Rodape = styled.div`
@@ -123,6 +157,12 @@ const Rodape = styled.div`
     p{
         text-transform: uppercase;
         color: #fff; 
+    }
+
+    @media screen and (max-width: 428px){
+        p{
+            font-size: 12px;
+        }
     }
 `
 

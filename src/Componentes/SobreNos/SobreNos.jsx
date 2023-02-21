@@ -59,6 +59,34 @@ const Sobre = styled.div`
         }        
     }
 
+    @media screen and (max-width: 640px){
+        display: flex;
+        flex-direction: column;
+        
+        .texto_sobre{
+            margin-top: 5%;
+            width: 80%;
+        }
+        .titulo_sobrenos{
+            font-size: 3rem;
+        }
+        .subtitulo_sobrenos{
+            font-size: 3rem;    
+        }        
+    }
+
+    @media screen and (max-width: 428px){
+        .texto_sobrenos{
+            font-size: 18px
+        }
+        .titulo_sobrenos{
+            font-size: 2rem;
+        }
+        .subtitulo_sobrenos{
+            font-size: 2rem;    
+        }    
+    }
+
 `
 
 const SobreImg = styled.div`
@@ -75,6 +103,10 @@ const SobreImg = styled.div`
     @media screen and (max-width: 1024px){
         width: 50%;
     }
+
+    @media screen and (max-width: 428px){
+        width: 80%;
+    }
 `
 
 const SobreNos = () => {
@@ -84,7 +116,7 @@ const SobreNos = () => {
             <Sobre id='SobreNos'>
                 <div className="texto_sobre">
                     <h1 className='titulo_sobrenos'>Quem é</h1>
-                    <h1 className='subtitulo_sobrenos'>thmotoscar ?</h1>
+                    <h1 className='subtitulo_sobrenos'>thmotoscar?</h1>
                     <p className="texto_sobrenos">A TH Motos Car é uma empresa localizado em fortaleza, especializada na compra, venda e troca de motos de todas as cilindradas, trabalhamos com 0km, seminovas e usadas e também começamos com carros seminovos e novos. trabalhamos sempre focados na satisfação de nossos clientes com qualidade e procedência. Venha nos visitar e confira nosso amplo estoque de motos e carros!</p>
                 </div>
 
