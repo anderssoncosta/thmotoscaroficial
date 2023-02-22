@@ -46,7 +46,20 @@ const Titulo = styled.div`
         text-shadow: 0px 0px 55px #ffd300;  
     }
 
+    @media screen and (max-width: 1024px){
+        .primeiro{
+            font-size: 6vw;
+
+        }
+        .segundo{
+            font-size: 6vw;
+        }
+    }
+
     @media screen and (max-width: 640px){
+        
+        top: 10%;
+        
         .primeiro{
             font-size: 3rem;
 
@@ -56,8 +69,8 @@ const Titulo = styled.div`
         }
     }
 
-    @media screen and (max-width: 428px){
-        top: 15%;
+    @media screen and (max-width: 425px){
+        top: 11%;
 
         .primeiro{
             font-size: 2.3rem;
@@ -264,44 +277,45 @@ const ImagensLoja = styled.div`
 
 
 const NossoEstoque = () => {
-    const slides = document.querySelectorAll(".item");
-    const button = document.querySelectorAll(".button");
 
-    let current = 0;
-    let prev = 4;
-    let next = 1;
+        const slides = document.querySelectorAll(".item");
+        const button = document.querySelectorAll(".button");
 
-    for (let i = 0; i < button.length; i++) {
-        button[i].addEventListener("click", () => i === 0 ? gotoPrev() : gotoNext());
-    }
+        let current = 0;
+        let prev = 4;
+        let next = 1;
 
-    const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-    const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
-
-    const gotoNum = number => {
-        current = number;
-        prev = current - 1;
-        next = current + 1;
-
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].classList.remove("active");
-            slides[i].classList.remove("prev");
-            slides[i].classList.remove("next");
+        for (let i = 0; i < button.length; i++) {
+            button[i].addEventListener("click", () => i === 0 ? gotoPrev() : gotoNext());
         }
 
-        if (next === 5) {
-            next = 0;
-        }
+        const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-        if (prev === -1) {
-            prev = 4;
-        }
+        const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
 
-        slides[current].classList.add("active");
-        slides[prev].classList.add("prev");
-        slides[next].classList.add("next");
-    }
+        let gotoNum = number => {
+            current = number;
+            prev = current - 1;
+            next = current + 1;
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                slides[i].classList.remove("prev");
+                slides[i].classList.remove("next");
+            }
+
+            if (next === 5) {
+                next = 0;
+            }
+
+            if (prev === -1) {
+                prev = 4;
+            }
+
+            slides[current].classList.add("active");
+            slides[prev].classList.add("prev");
+            slides[next].classList.add("next");
+        }
     
     return(
         <>
@@ -312,25 +326,25 @@ const NossoEstoque = () => {
                 </Titulo>
 
             <ImagensLoja>
-                <StyleBanner class="items">
-                    <div class="item active">
+                <StyleBanner className="items">
+                    <div className="item active">
                         <img src="/imagens/estoque1.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
-                    <div class=" item next">
+                    <div className=" item next">
                         <img src="../imagens/estoque2.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
-                    <div class="item">
+                    <div className="item">
                         <img src="../imagens/estoque3.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
-                    <div class="item">
+                    <div className="item">
                         <img src="../imagens/estoque4.jpeg" alt='Imagem Nosso Estoque'/>
                     </div>
-                    <div class="item prev">
+                    <div className="item prev">
                         <img src="../imagens/estoque5.jpg" alt='Imagem Nosso Estoque'/>
                     </div>
-                    <div class="button-container">
-                        <div class="button"><i class="fas fa-angle-left"></i></div>
-                        <div class="button"><i class="fas fa-angle-right"></i></div>
+                    <div className="button-container">
+                        <div className="button"><i className="fas fa-angle-left"></i></div>
+                        <div className="button"><i className="fas fa-angle-right"></i></div>
                     </div>
                 </StyleBanner>
             

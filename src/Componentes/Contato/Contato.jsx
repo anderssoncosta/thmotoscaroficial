@@ -17,6 +17,7 @@ const ContainerContato = styled.div`
 
 const CaixaContato = styled.div`
     width: 100%;
+    max-width: 90%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -36,7 +37,7 @@ const ContatoForm = styled.form`
         /* width: 300px; */
         text-transform: uppercase;
         color: #FFFFFF;
-        font-size: 4.35rem;
+        font-size: 4.35vw;
         margin-bottom: 0;
         font-weight: 900;
         align-items: flex-start;
@@ -46,7 +47,7 @@ const ContatoForm = styled.form`
         /* width: 300px; */
         text-transform: uppercase;
         color: #e9ac2c;
-        font-size: 4.35rem;
+        font-size: 4.35vw;
         margin-top: 0;
         font-weight: 900;
         text-shadow: 0px 0px 55px #ffd300;
@@ -58,7 +59,7 @@ const ContatoForm = styled.form`
         width: 60%;
         color: #FFF;
         margin: 5px 0;
-        font-size: 40px;
+        font-size: 2vw;
     }
 
     @media screen and (max-width: 1024px){
@@ -66,9 +67,18 @@ const ContatoForm = styled.form`
         align-items: center;
         margin: 20px 20px;
 
+        .first{
+            font-size: 6.35vw;
+        }
+
+        .second{
+            font-size: 6.35vw;
+        }
+
         p{
             text-align: center;
             width: 100%;
+            font-size: 3vw;
             
         }
     }

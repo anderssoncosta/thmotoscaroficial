@@ -88,7 +88,8 @@ const NavMenu = styled.div`
 
     a{
         text-transform: capitalize;
-        font-size: 1.25rem;
+        /* font-size: 1.25rem; */
+        font-size: 1.2vw;
         color: #FFF;
         border-radius: 0;
         border-width: inherit;
@@ -107,14 +108,15 @@ const NavMenu = styled.div`
 
     @media screen and (max-width: 1024px){
         a{
-            font-size: 1rem;
+            font-size: 1.5vw;
         }
 
     }
     @media screen and (max-width: 940px){
         width: 70%;
         a{
-            font-size: 1rem;
+            /* font-size: 1rem; */
+            font-size: 1.7vw;
         }
 
     }
