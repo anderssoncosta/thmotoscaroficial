@@ -103,6 +103,9 @@ const ContatoForm = styled.form`
         .second{
             font-size: 2.5rem;
         }
+        p{
+            font-size: 4.5vw;
+        }
     }
 `
 
@@ -152,7 +155,8 @@ const Mapa = styled.div`
     @media screen and (max-width: 1024px){
         width: 70%;
     }
-    @media screen and (max-width: 428px){
+    @media screen and (max-width: 425px){
+        justify-content: center;
         iframe{
             height: 300px;
         }

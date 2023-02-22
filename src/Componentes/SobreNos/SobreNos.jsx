@@ -89,16 +89,22 @@ const Sobre = styled.div`
         }        
     }
 
-    @media screen and (max-width: 428px){
+    @media screen and (max-width: 425px){
         .texto_sobrenos{
-            font-size: 18px
+            font-size: 4.5vw;
         }
-        .titulo_sobrenos{
-            font-size: 2rem;
+
+        .texto_sobre{
+            font-size: 4.5vw;
+            h1{
+                font-size: 8.5vw;
+            }
+                
+            p{
+                font-size: 4.5vw;
+            }    
         }
-        .subtitulo_sobrenos{
-            font-size: 2rem;    
-        }    
+
     }
 
 `

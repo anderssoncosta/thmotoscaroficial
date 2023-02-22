@@ -73,11 +73,11 @@ const Titulo = styled.div`
         top: 11%;
 
         .primeiro{
-            font-size: 2.3rem;
+            font-size: 2.5rem;
 
         }
         .segundo{
-            font-size: 2.3rem;
+            font-size: 2.5rem;
         }
     }
 `
