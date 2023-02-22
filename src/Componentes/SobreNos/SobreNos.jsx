@@ -52,7 +52,7 @@ const Sobre = styled.div`
         width: 100%;
         text-align: justify;
         /* font-size: 25px; */
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
 
     @media screen and (max-width: 1024px){
