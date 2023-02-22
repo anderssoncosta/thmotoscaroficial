@@ -43,7 +43,7 @@ const Sobre = styled.div`
         font-size: 70px;
         font-size: 4.5vw;
         font-weight: 900;
-        text-shadow: 0px 0px 55px #ffd300;
+        text-shadow: 0px 0px 40px #ffd300;
     }
     
     .texto_sobrenos{

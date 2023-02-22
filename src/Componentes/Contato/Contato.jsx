@@ -46,11 +46,11 @@ const ContatoForm = styled.form`
     .second{
         /* width: 300px; */
         text-transform: uppercase;
-        color: #e9ac2c;
+        color: #f6d549;
         font-size: 4.35vw;
         margin-top: 0;
         font-weight: 900;
-        text-shadow: 0px 0px 55px #ffd300;
+        text-shadow: 0px 0px 30px #ffd300;
 
     }
     
