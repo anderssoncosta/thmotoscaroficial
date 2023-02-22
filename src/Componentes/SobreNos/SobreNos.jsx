@@ -17,10 +17,11 @@ const Sobre = styled.div`
     position: relative;
     width: 100%;
     max-width: 90%;
-    margin: 3% 0;
+    /* margin: 3% 0; */
     gap: 5%;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: auto;
    
     
