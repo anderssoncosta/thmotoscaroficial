@@ -1,12 +1,7 @@
 import styled from 'styled-components';
 
-import { TiSocialFacebook } from 'react-icons/ti';
-import { SlSocialInstagram } from 'react-icons/sl';
-import { BsWhatsapp } from 'react-icons/bs';
-
 
 const ContainerContato = styled.div`
-    background-color: #000;
     width: 100%;
     display: flex;
     align-items: center;
@@ -109,36 +104,6 @@ const ContatoForm = styled.form`
     }
 `
 
-const RedesSociais = styled.div`
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-
-    a{
-        background-color: #e9ac2c;
-        color: #000;
-        border-radius: 50%;
-        margin-top: 10px;
-        margin-right: 15px;
-        margin-bottom: 42px;
-        font-size: 50px;
-        padding: 10px;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    @media screen and (max-width: 425px){
-        a{
-            width: 40px;
-            height: 40px;
-        }
-    }
-`
-
 const Mapa = styled.div`
     width: 40%;
     display: flex;
@@ -146,10 +111,9 @@ const Mapa = styled.div`
     iframe{
         height: 450px;
         border: none;
-        border-radius: 50px;
+        border-radius: 60px;
         display: flex;
         margin: 20px 0;
-        box-shadow: 0px 0px 38px #ffd300;
     }
 
     @media screen and (max-width: 1024px){
@@ -163,25 +127,6 @@ const Mapa = styled.div`
     }
 `
 
-const Rodape = styled.div`
-    text-align: center;
-    width: 100%;
-    background-color: #000;
-   
-    p{
-        text-transform: uppercase;
-        color: #fff; 
-    }
-
-    @media screen and (max-width: 428px){
-        p{
-            font-size: 12px;
-        }
-    }
-`
-
-
-
 const Contato = () => {
     return(
     <ContainerContato id="Contato">
@@ -193,32 +138,6 @@ const Contato = () => {
                         R. Um, 853  Loja: 01 - 1 Fortaleza - CE 60767-725
                         </p>
                         
-
-                        <RedesSociais>
-                            
-                            <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.instagram.com/thmotoscar/"
-                            >
-                                <SlSocialInstagram/>
-                            {/* <i class="fa-brands fa-instagram"></i> */}
-                            </a>
-                            <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="mailto:anderssoncosta6@gmail.com"
-                            >
-                                <TiSocialFacebook/>
-                            </a>
-                            <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://wa.me/5585989635371"
-                            >
-                            <BsWhatsapp/>
-                            </a>
-                        </RedesSociais>
                 </ContatoForm>
 
                     <Mapa>
@@ -235,9 +154,6 @@ const Contato = () => {
                     </Mapa>
         </CaixaContato>
 
-        <Rodape>
-            <p className="texto_rodape">@2023 TH MOTOSCAR, TODOS OS DIREITOS RESERVADOS.</p>
-        </Rodape>
     </ContainerContato>
     )
 }

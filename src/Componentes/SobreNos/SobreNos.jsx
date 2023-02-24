@@ -3,7 +3,6 @@ import styled from "styled-components"
 const ContainerSobreNos = styled.div`
     position: relative;
     width: 100%;
-    background: #000;
     background-image: url(/imagens/fundosobrenos.png);
     background-position: center right;
     background-size: contain;
