@@ -35,7 +35,7 @@ const RedesSociais = () => {
                                 <a
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="mailto:anderssoncosta6@gmail.com"
+                                href="https://www.facebook.com/profile.php?id=100064304313578&sk=about"
                                 >
                                     <TiSocialFacebook/>
                                 </a>
