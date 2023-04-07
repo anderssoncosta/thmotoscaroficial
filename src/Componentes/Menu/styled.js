@@ -14,17 +14,17 @@ export const ContainerMenu = styled.div`
     }
     
     @media screen and (max-width: 768px){
-        height: 130px;
-        
+        height: auto;
+        padding: 40px 0;
     }
 
     @media screen and (max-width: 640px){
-        height: 180px;
-
+        height: auto;
+        padding: 40px 0;
     }
     @media screen and (max-width: 428px){
-        height: 140px;
-
+        height: auto;
+        padding: 20px 0;
     }
 
 `
@@ -51,13 +51,15 @@ export const Logo = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        width: 50%;
+        display: none;
+        
+        /* width: 50%;
         align-items: center;
         
         .logo_img{
             width: 40%;
             transform: none;
-        }
+        } */
     }
 
     @media screen and (max-width: 640px){
@@ -121,6 +123,11 @@ export const NavMenu = styled.div`
 
     }
     @media screen and (max-width: 768px){
-        display: none;
+        display: flex;
+        justify-content: center;
+        
+        a{
+            font-size: 2.1vw;
+        }
     }
 `
