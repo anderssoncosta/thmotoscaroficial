@@ -24,7 +24,7 @@ export const ContainerMenu = styled.div`
     }
     @media screen and (max-width: 428px){
         height: auto;
-        padding: 20px 0;
+        padding: 30px 0;
     }
 
 `
@@ -126,6 +126,12 @@ export const NavMenu = styled.div`
         display: flex;
         justify-content: center;
         
+        a{
+            font-size: 2.1vw;
+        }
+    }
+
+    @media screen and (max-width: 428px){
         a{
             font-size: 2.1vw;
         }
